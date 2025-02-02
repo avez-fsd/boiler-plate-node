@@ -1,0 +1,23 @@
+{
+  "name": "boiler-plate-node",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avez-fsd/boiler-plate-node.git"
+  },
+  "author": "Mohammad Avez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avez-fsd/boiler-plate-node/issues"
+  },
+  "homepage": "https://github.com/avez-fsd/boiler-plate-node#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
