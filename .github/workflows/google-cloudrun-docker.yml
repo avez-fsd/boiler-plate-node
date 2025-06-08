@@ -37,7 +37,7 @@ on:
 env:
   PROJECT_ID: 'aivid-431719' # TODO: update to your Google Cloud project ID
   REGION: 'asia-south1' # TODO: update to your region
-  SERVICE: 'node-boilerplate' # TODO: update to your service name
+  SERVICE: 'boiler-plate-node' # TODO: update to your service name
   WORKLOAD_IDENTITY_PROVIDER: 'projects/601226616345/locations/global/workloadIdentityPools/github-2/providers/github' # TODO: update to your workload identity provider
 
 jobs:
