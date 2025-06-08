@@ -52,7 +52,6 @@ Thumbs.db
 # src/**/*.js
 *.env
 *.env.example
-Dockerfile
 tabsquare-805d0-c5ab92183f3e.json
 development.env.example
 tabsquare-dev-64dc-00506860229e.json
