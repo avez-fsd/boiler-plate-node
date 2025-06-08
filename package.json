@@ -1,6 +1,6 @@
 {
   "name": "boiler-plate-node",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "test project",
   "main": "index.js",
   "type": "module",
