@@ -1,12 +1,13 @@
 
 import express from 'express'
-
+import packageJson from './package.json' assert { type: 'json' };
 const app = express()
 const port = 3000;
 
 app.get('/', (req, res, next) => {
     res.send({
-        msg: "Success"
+        msg: "Success",
+        version: packageJson.version
     })
 })
 
