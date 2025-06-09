@@ -81,9 +81,10 @@ jobs:
 
       - name: 'Build and Push Container'
         run: |-
-          DOCKER_TAG="${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{ github.sha }}"
+          IMAGE_NAME="app"
+          DOCKER_TAG="${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/boiler-plate-node/${IMAGE_NAME}:${{ github.sha }}"
           docker build --tag "${DOCKER_TAG}" .
-          gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://asia-south1-docker.pkg.dev
+          gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://${{ env.REGION }}-docker.pkg.dev
           docker push "${DOCKER_TAG}"
       - name: 'Deploy to Cloud Run'
 
