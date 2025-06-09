@@ -2,7 +2,7 @@
 import express from 'express'
 import packageJson from './package.json' assert { type: 'json' };
 const app = express()
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res, next) => {
     res.send({
@@ -11,8 +11,8 @@ app.get('/', (req, res, next) => {
     })
 })
 
-export const server = app.listen(port, () => {
-    console.log(`⚡️[server]: Server is running at http://localhost:${port}`, {
-      port
+export const server = app.listen(PORT, () => {
+    console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`, {
+      PORT
     })
 })
