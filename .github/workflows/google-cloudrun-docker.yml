@@ -61,6 +61,7 @@ jobs:
         with:
           workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
           service_account: 'github-boiler-plate-node@aivid-431719.iam.gserviceaccount.com'
+          project_id: 'aivid-431719'
 
       # BEGIN - Docker auth and build
       #
