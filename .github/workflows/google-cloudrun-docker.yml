@@ -76,6 +76,7 @@ jobs:
           gcloud auth list
           gcloud config list project
           gcloud artifacts repositories list --location=asia-south1
+          gcloud auth configure-docker
 
       - name: 'Build and Push Container'
         run: |-
